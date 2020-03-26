@@ -3,72 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Portafolio Cobecc</title>  
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Overpass&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="icon" href="./res/images/favicon.ico" type="image/png"/>
 </head>
 <body>
     <header class="header">
-            <figure class="logo">
-                <img src="./res/images/logo.png" alt="Logo Cobecc">
+        <div class="wrapper">
+            <figure>
+                <img class="logo" src="./res/images/logo.png" alt="Logo Cobecc">
             </figure>
-        <nav class="menu" >
-            <ol>
-                <li>
-                    <a href="#proyecto">Proyectos</a>
-                </li>
-                <li>
-                    <a href="#experiencia">Experiencia</a>
-                </li>
-                <li>
-                    <a href="#contacto">Contacto</a>
-                </li>
-            </ol>
-        </nav>
+            <nav class="menu" >
+                <ul>
+                    <li>
+                        <a href="#proyecto">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#experiencia">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header> 
+    
     <section class="hero">
-        <h1>
-            ¡Bienvenidos! Soy <strong>Constanza Beccan</strong><br/> desarrolladora <strong>front-end </strong><br/> con pasión por <strong>seguir avanzando</strong>.
-        </h1>
-        <figure>
-            <img src="./res/images/black-business-computer-contemporary-296115.jpg" alt="Escritorio blanco, celular y computadora" width="500px">
-        </figure>
-    </section>
-    <section id="proyecto" class="portfolio">            
-        <h2>Proyectos Realizados</h2>
-        <article class="project">
-            <h3 class="project-title">ClickerCat</h3>
-            <h6 class="project-tecnology">Unity3d / C# / Asprite / Bosca Ceoil</h6>
-            <p class="project-date"><small><strong>Fecha:</strong> 2019-actualidad</small></p>
-            <p class="project-url"><small><strong>Podrás verlo en:</strong> Próximamente</small></p>
-            <p class="project-description">ClickerCat es un juego en unity de  tipo Clicker donde recolectas ronroneos de gatitos para conseguir posteriormente peces y asi mejorar tus mimos hacia los gatitos</p>
-            <figure class="project-imageContainer">
-                <img class="project-image" src="./res/images/781872ce-ab30-4946-b8dd-4f7414efb068.jpg" alt="Ingame de ClickerCat" width="500px">
+        <div class="wrapper">
+            <h1>
+                ¡Bienvenidos! Soy <strong>Constanza Beccan</strong><br/> desarrolladora <strong>front-end </strong><br/> con pasión por <strong>seguir avanzando</strong>
+            </h1>
+            <figure>
+                <img class="hero-image" src="./res/images/hero.jpg" alt="Escritorio blanco, celular y computadora" >
             </figure>
-        </article>
+        </div>
     </section>
-    <section id="experiencia">
-        <h2>Más sobre mi experiencia</h2>
-        <article class="experience"> 
-            <figure class="experience-imageContainer">
-                <img class="experience-image" src="./res/images/blur-close-up-code-computer-546819.jpg" alt="Foto de escritorio" width="500px">
-            </figure>
-            <h3 class="experience-title">Incluyeme.com (2018)</h3>
-            <p class="experience-description">Desarrollo front-end de base Wordpress para mejorar la plataforma y actualizarla</p>
-            <a class="experience-url" href="#">leer más</a>
-        </article>
+ 
+    <section id="proyecto" class="portfolio">  
+        <div class="wrapper">     
+            <h2>Portafolio</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">ClickerCat</h3>
+                    <h6 class="project-tecnology">Unity3d / C# / Asprite / Bosca Ceoil</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 2019-actualidad</small></p>
+                    <p class="project-description">ClickerCat es un juego en Unity2d de tipo Clicker donde recolectas ronroneos de gatitos para conseguir posteriormente peces y así mejorar tus mimos hacia los gatitos.</p>
+                    <p class="project-url-no"><small><strong>Podrás verlo en:</strong> Próximamente</small></p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="./res/images/ccat.jpg" alt="Ingame de ClickerCat" width="500px">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Whack-A-Dio</h3>
+                    <h6 class="project-tecnology">HTML/CSS/JS</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 2018</small></p>
+                    <p class="project-description">Es el típico juego de "golpea al topo" pero en vez de un topo es con Dio, un personaje de Jojo's Bizzare Adventure</p>
+                    
+                    <a class="project-url" href="https://cobecc.github.io/WhackaDio/">Juegalo acá</a>
+                </div>  
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="./res/images/dio.jpg" alt="Ingame de ClickerCat" width="500px">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Memotest Floreado</h3>
+                    <h6 class="project-tecnology">HTML/CSS/JS</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 2018</small></p>
+                    <p class="project-description">Uno de mis primeros juegos en html+css+js del clasico juego de memoria.</p>
+                    
+                    <a class="project-url" href="https://cobecc.github.io/Memotest/">Juegalo acá</a>
+                </div>  
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="./res/images/memotest.jpg" alt="Ingame de ClickerCat" width="500px">
+                </figure>
+            </article>
+        </div>     
     </section>
+    <div class="wrapper">
+        <h2 class="experience-list-title">Más sobre mi experiencia</h2>
+    </div>
+    
+    <section id="experiencia" class="experience-container">
+        <div class="wrapper">
+            <article class="experience">         
+                <figure class="experience-imageContainer">
+                    <img class="experience-image" src="./res/images/exp.jpg" alt="Foto de escritorio" width="500px">
+                </figure>
+            <div class="experience-detail">
+                <h3 class="experience-title">Incluyeme.com (2018)</h3>
+                <p class="experience-description">Desarrollo front-end de base Wordpress para mejorar la plataforma, actualizarla y hacerla lo más accesible posible. </p>
+                
+            </div>
+                
+            </article>
+            <article class="experience">         
+                <figure class="experience-imageContainer">
+                    <img class="experience-image" src="./res/images/exp.jpg" alt="Foto de escritorio" width="500px">
+                </figure>
+            <div class="experience-detail">
+                <h3 class="experience-title">Freelance (2019)</h3>
+                <p class="experience-description">Freelance en pequeñas modificaciones en React. </p>
+            </div>
+            </article>
+        </div>
+    </section>
+
+
     <section id="contacto" class="contact">
-        <form action="/suscripcion/" class="form-email">
-            <h3 class="form-title">¿Creamos algo juntos?</h3>
-            <input class="form-input" type="text" placeholder="Déjame tu email" >
-            <button class="form-button" type="submit">
-                ¡Enviar!
-            </button>
-        </form>
+        <div class="wrapper">
+            <form action="/suscripcion/" class="form-email">
+                <h3 class="form-title">¿Creamos algo juntos?</h3>
+                <input class="form-input" type="text" placeholder="Déjame tu email" >
+                <button class="form-button" type="submit">
+                    ¡Enviar!
+                </button>
+                
+            </form>
+            <div class="social">
+                <a href="https://github.com/Cobecc/" class="social-link github"></a>
+                <a href="https://twitter.com/Cobecc_it" class="social-link twitter"></a>
+            </div>
+        </div>
     </section>
     <footer class="footer">
-        Footer
+        <div class="wrapper">
+            <div>
+                <p>Desarrollado con ayuda de los cursos de platzi.</p>
+            </div>
+            <div>
+                <p>With ❤️</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
